@@ -1,29 +1,32 @@
+/* style.css */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: linear-gradient(to bottom, #000000, #0033cc);
+  color: #fff;
 }
 
 header {
-  background: #222;
-  color: #fff;
+  background: #000;
+  color: #ffcc00;
   padding: 1em;
   text-align: center;
 }
 
 nav {
-  background: #444;
-  color: #fff;
+  background: #001a66;
   display: flex;
   justify-content: center;
   gap: 2em;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 nav a {
-  color: #fff;
+  color: #ffcc00;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
@@ -34,21 +37,34 @@ section {
   margin-bottom: 2em;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-table, th, td {
-  border: 1px solid #ccc;
+.cardapio-categoria {
+  margin-bottom: 1em;
 }
 
-th, td {
+.cardapio-item {
+  margin-left: 1em;
+  padding: 0.2em 0;
+}
+
+input, button {
   padding: 0.5em;
-  text-align: left;
-}
-
-input, select, button {
   margin: 0.5em 0;
-  padding: 0.5em;
-} 
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6b800;
+}

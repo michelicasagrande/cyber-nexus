@@ -14,7 +14,6 @@
   <nav>
     <a href="#reserva">Reservar Sala</a>
     <a href="#cardapio">Cardápio</a>
-    <a href="#gerenciar">Gerenciar Padaria</a>
   </nav>
 
   <main>
@@ -31,27 +30,20 @@
 
     <section id="cardapio">
       <h2>Cardápio da Padaria</h2>
-      <table>
-        <thead>
-          <tr><th>Item</th><th>Tipo</th><th>Preço (R$)</th></tr>
-        </thead>
-        <tbody id="tabelaCardapio"></tbody>
-      </table>
-    </section>
-
-    <section id="gerenciar">
-      <h2>Gerenciamento da Padaria</h2>
-      <form id="formGerenciar">
-        <label>Item:<br><input type="text" id="itemNome" required></label><br>
-        <label>Tipo:<br>
-          <select id="itemTipo">
-            <option value="Comida">Comida</option>
-            <option value="Bebida">Bebida</option>
-          </select>
-        </label><br>
-        <label>Preço:<br><input type="number" id="itemPreco" required></label><br>
-        <button type="submit">Adicionar ao Cardápio</button>
-      </form>
+      <div class="cardapio-categoria">
+        <h3>Comidas</h3>
+        <div class="cardapio-item">Pão de Queijo - R$ 3,50</div>
+        <div class="cardapio-item">Coxinha - R$ 5,00</div>
+        <div class="cardapio-item">Empada de Frango - R$ 4,50</div>
+        <div class="cardapio-item">Bolo de Chocolate - R$ 6,00</div>
+      </div>
+      <div class="cardapio-categoria">
+        <h3>Bebidas</h3>
+        <div class="cardapio-item">Café Preto - R$ 2,00</div>
+        <div class="cardapio-item">Capuccino - R$ 4,00</div>
+        <div class="cardapio-item">Suco de Laranja - R$ 4,50</div>
+        <div class="cardapio-item">Refrigerante - R$ 3,50</div>
+      </div>
     </section>
   </main>
 
