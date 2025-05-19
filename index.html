@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Nexus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cyber Nexus</h1>
+  </header>
+
+  <nav>
+    <a href="#reserva">Reservar Sala</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#gerenciar">Gerenciar Padaria</a>
+  </nav>
+
+  <main>
+    <section id="reserva">
+      <h2>Reserva de Sala de Reunião</h2>
+      <form id="reservaForm">
+        <label>Nome:<br><input type="text" name="nome" required></label><br>
+        <label>Data:<br><input type="date" name="data" required></label><br>
+        <label>Horário:<br><input type="time" name="horario" required></label><br>
+        <button type="submit">Reservar</button>
+      </form>
+      <ul id="listaReservas"></ul>
+    </section>
+
+    <section id="cardapio">
+      <h2>Cardápio da Padaria</h2>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Tipo</th><th>Preço (R$)</th></tr>
+        </thead>
+        <tbody id="tabelaCardapio"></tbody>
+      </table>
+    </section>
+
+    <section id="gerenciar">
+      <h2>Gerenciamento da Padaria</h2>
+      <form id="formGerenciar">
+        <label>Item:<br><input type="text" id="itemNome" required></label><br>
+        <label>Tipo:<br>
+          <select id="itemTipo">
+            <option value="Comida">Comida</option>
+            <option value="Bebida">Bebida</option>
+          </select>
+        </label><br>
+        <label>Preço:<br><input type="number" id="itemPreco" required></label><br>
+        <button type="submit">Adicionar ao Cardápio</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
